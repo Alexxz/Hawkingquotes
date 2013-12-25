@@ -1,4 +1,4 @@
-package com.mycompany.myapp;
+package com.alexxz.quoter;
 
 import android.app.*;
 import android.os.*;
