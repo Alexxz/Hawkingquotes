@@ -8,6 +8,11 @@ import android.widget.ExpandableListView.*;
 
 public class MainActivity extends Activity
 {
+	final static private String[] quotes = {
+		"We need something new. We can't predict what that will be or when we will find it because if we knew that, we would have found it already!",
+		"quote2",
+		"quote3"
+		};
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -29,8 +34,9 @@ public class MainActivity extends Activity
 				public void onClick(View p1) {
 					final TextView text = (TextView) findViewById(R.id.quotetext);
 					//NextQuoteButton.setText("");
-					text.setText("My quote text"+this.counter);
+					text.setText(MainActivity.quotes[this.counter]);
 					this.counter++;
+					this.counter = this.counter % MainActivity.quotes.length;
 				}
 			});
     }
