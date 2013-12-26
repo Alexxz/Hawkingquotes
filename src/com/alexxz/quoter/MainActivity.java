@@ -15,18 +15,22 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 		
-		Button exitButton = (Button) findViewById(R.id.exitbutton);
+		final Button exitButton = (Button) findViewById(R.id.exitbutton);
 		exitButton.setOnClickListener( new OnClickListener () {
 			public void onClick(View p1) {
 				finish();
 			}
 		});
 		
-		Button NextQuoteButton = (Button) findViewById(R.id.nextquotebutton);
+		final Button NextQuoteButton = (Button) findViewById(R.id.nextquotebutton);
 		NextQuoteButton.setOnClickListener( new OnClickListener () {
+			    private int counter = 0;
+				
 				public void onClick(View p1) {
-					TextView text = (TextView) findViewById(R.id.quotetext);
-					text.setText("My quote text");
+					final TextView text = (TextView) findViewById(R.id.quotetext);
+					//NextQuoteButton.setText("");
+					text.setText("My quote text"+this.counter);
+					this.counter++;
 				}
 			});
     }
