@@ -47,7 +47,8 @@
 				android:layout_width="0dip"
 				android:id="@+id/quoteholder"
 				android:background="#80000000"
-				android:layout_weight="5">
+				android:layout_weight="5"
+				android:gravity="center">
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -57,7 +58,8 @@
 					android:id="@+id/quotetext"
 					android:textColor="#AD5C56"
 					android:textAppearance="?android:attr/textAppearanceLarge"
-					android:padding="10dp"/>
+					android:padding="10dp"
+					android:maxWidth="500dp"/>
 
 			</RelativeLayout>
 
