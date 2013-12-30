@@ -21,6 +21,9 @@ public class MainActivity extends Activity
 		"We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.",
 		"So Einstein was wrong when he said, \"God does not play dice.\" Consideration of black holes suggests, not only that God does play dice, but that he sometimes confuses us by throwing them where they can't be seen.",
 		"The human race is just a chemical scum on a moderate-sized planet, orbiting around a very average star in the outer suburb of one among a hundred billion galaxies. We are so insignificant that I can't believe the whole universe exists for our benefit. That would be like saying that you would disappear if I closed my eyes.",
+		"I think computer viruses should count as life ... I think it says something about human nature that the only form of life we have created so far is purely destructive. We've created life in our own image.",
+		"It is not clear that intelligence has any long-term survival value.",
+		"Although September 11 was horrible, it didn't threaten the survival of the human race, like nuclear weapons do.",
 		};
 		
 	private GestureDetectorCompat mDetector; 
@@ -33,6 +36,10 @@ public class MainActivity extends Activity
 	{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+	
+		java.util.Random r = new java.util.Random(); 
+		this.counter=r.nextInt(MainActivity.quotes.length-1);
+		showNextQuote();
 		
 		this.mDetector = new GestureDetectorCompat(this,  new MyGestureListener());
 		
