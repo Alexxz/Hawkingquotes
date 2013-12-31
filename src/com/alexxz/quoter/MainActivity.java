@@ -7,6 +7,7 @@ import android.widget.*;
 import android.widget.ExpandableListView.*;
 import android.support.v4.view.*;
 import android.graphics.*;
+import android.content.*;
 
 public class MainActivity extends Activity
 {
@@ -39,7 +40,7 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 	
-		java.util.Random r = new java.util.Random(); 
+	    java.util.Random r = new java.util.Random(); 
 		this.counter=r.nextInt(MainActivity.quotes.length-1);
 		
 		
@@ -69,32 +70,40 @@ public class MainActivity extends Activity
 					
 					TextView myText = new TextView(MainActivity.this);
 					myText.setGravity(Gravity.CENTER);
-				    myText.setTextAppearance(activity, android.R.attr.textAppearanceLarge);
+				    myText.setTextAppearance(activity, android.R.style.TextAppearance_Large);
 					myText.setTextColor(android.graphics.Color.parseColor("#AD5C56"));
+					myText.setPadding(10, 10, 10, 10);
 					return myText;
 				}
 			});
 
-		
-	 	android.view.animation.Animation in = android.view.animation.AnimationUtils.loadAnimation(this,android.R.anim.slide_in_left);
-	    android.view.animation.Animation out = android.view.animation.AnimationUtils.loadAnimation(this,android.R.anim.slide_out_right);
+	
+		final int time = 200;
+	 	android.view.animation.Animation in = new android.view.animation.AlphaAnimation(0,1);
+		in.setDuration(time);
+	    android.view.animation.Animation out = new android.view.animation.AlphaAnimation(1,0);
+		out.setDuration(time);
+		in.setStartOffset(time/2);
 		
 		// set the animation type of textSwitcher
 		mSwitcher.setInAnimation(in);	
 	    mSwitcher.setOutAnimation(out);
 		
-		showNextQuote();
+		showQuote();
 		
     }
 	
 	private  void showNextQuote()
 	{
-
-
-		this.mSwitcher.setText(MainActivity.quotes[this.counter]);
 		this.counter++;
 		this.counter = this.counter % MainActivity.quotes.length;
+		showQuote();
 		
+	}
+	
+	private void showQuote()
+	{
+		this.mSwitcher.setText(MainActivity.quotes[this.counter]);
 	}
 	
 	@Override
@@ -104,12 +113,6 @@ public class MainActivity extends Activity
 	}
 	
 	class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
-		 
-		@Override
-	    public boolean onDown(MotionEvent event) { 
-		//Log.d(DEBUG_TAG,"onDown: " + event.toString()); 
-			return true;
-		}
 
 		@Override
 		public boolean onFling(MotionEvent event1, MotionEvent event2, 
