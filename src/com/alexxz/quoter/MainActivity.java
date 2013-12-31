@@ -6,6 +6,7 @@ import android.view.*;
 import android.widget.*;
 import android.widget.ExpandableListView.*;
 import android.support.v4.view.*;
+import android.graphics.*;
 
 public class MainActivity extends Activity
 {
@@ -27,6 +28,7 @@ public class MainActivity extends Activity
 		};
 		
 	private GestureDetectorCompat mDetector; 
+	private TextSwitcher mSwitcher;
 	
 	private int counter = 0;
 	
@@ -39,7 +41,7 @@ public class MainActivity extends Activity
 	
 		java.util.Random r = new java.util.Random(); 
 		this.counter=r.nextInt(MainActivity.quotes.length-1);
-		showNextQuote();
+		
 		
 		this.mDetector = new GestureDetectorCompat(this,  new MyGestureListener());
 		
@@ -57,13 +59,39 @@ public class MainActivity extends Activity
 					 showNextQuote();
                 }
 			});
+			
+		final MainActivity activity = this;
+		mSwitcher = (TextSwitcher) findViewById(R.id.quotetext);
+		mSwitcher.setFactory(new android.widget.ViewSwitcher.ViewFactory() {
+				
+				public View makeView() {
+					// TODO Auto-generated method stub
+					
+					TextView myText = new TextView(MainActivity.this);
+					myText.setGravity(Gravity.CENTER);
+				    myText.setTextAppearance(activity, android.R.attr.textAppearanceLarge);
+					myText.setTextColor(android.graphics.Color.parseColor("#AD5C56"));
+					return myText;
+				}
+			});
+
+		
+	 	android.view.animation.Animation in = android.view.animation.AnimationUtils.loadAnimation(this,android.R.anim.slide_in_left);
+	    android.view.animation.Animation out = android.view.animation.AnimationUtils.loadAnimation(this,android.R.anim.slide_out_right);
+		
+		// set the animation type of textSwitcher
+		mSwitcher.setInAnimation(in);	
+	    mSwitcher.setOutAnimation(out);
+		
+		showNextQuote();
+		
     }
 	
 	private  void showNextQuote()
 	{
-		final TextView text = (TextView) findViewById(R.id.quotetext);
-		//NextQuoteButton.setText("");
-		text.setText(MainActivity.quotes[this.counter]);
+
+
+		this.mSwitcher.setText(MainActivity.quotes[this.counter]);
 		this.counter++;
 		this.counter = this.counter % MainActivity.quotes.length;
 		
