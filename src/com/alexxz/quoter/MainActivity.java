@@ -29,7 +29,10 @@ public class MainActivity extends Activity
 		"The world has changed far more in the past 100 years than in any other century in history. The reason is not political or economic but technological — technologies that flowed directly from advances in basic science.",
 		"One might think this means that imaginary numbers are just a mathematical game having nothing to do with the real world. From the viewpoint of positivist philosophy, however, one cannot determine what is real. All one can do is find which mathematical models describe the universe we live in. It turns out that a mathematical model involving imaginary time predicts not only effects we have already observed but also effects we have not been able to measure yet nevertheless believe in for other reasons. So what is real and what is imaginary? Is the distinction just in our minds?",
 		"I don't think the human race will survive the next thousand years, unless we spread into space. There are too many accidents that can befall life on a single planet. But I'm an optimist. We will reach out to the stars.",
-		"We shouldn't be surprised that conditions in the universe are suitable for life, but this is not evidence that the universe was designed to allow for life. We could call order by the name of God, but it would be an impersonal God. There's not much personal about the laws of physics."
+		"We shouldn't be surprised that conditions in the universe are suitable for life, but this is not evidence that the universe was designed to allow for life. We could call order by the name of God, but it would be an impersonal God. There's not much personal about the laws of physics.",
+	    "[on the possibility of contact with an alien civilization] I think it would be a disaster. The extraterrestrials would probably be far in advance of us. The history of advanced races meeting more primitive people on this planet is not very happy, and they were the same species. I think we should keep our heads low.",
+		"The life we have on Earth must have spontaneously generated itself. It must therefore be possible for life to generate spontaneously elsewhere in the universe.",
+		"I'm sorry to disappoint science fiction fans, but if information is preserved, there is no possibility of using black holes to travel to other universes."
 		};
 		
 	private GestureDetectorCompat mDetector; 
