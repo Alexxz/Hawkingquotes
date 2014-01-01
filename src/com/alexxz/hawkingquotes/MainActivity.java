@@ -1,4 +1,4 @@
-package com.alexxz.quoter;
+package com.alexxz.hawkingquotes;
 
 import android.app.*;
 import android.os.*;
