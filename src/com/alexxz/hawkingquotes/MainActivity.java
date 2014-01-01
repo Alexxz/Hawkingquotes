@@ -3,6 +3,7 @@ package com.alexxz.hawkingquotes;
 import android.app.*;
 import android.os.*;
 import android.view.*;
+import android.view.animation.*;
 import android.widget.*;
 import android.widget.ExpandableListView.*;
 import android.support.v4.view.*;
@@ -51,7 +52,7 @@ public class MainActivity extends Activity
 			
 		final MainActivity activity = this;
 		mSwitcher = (TextSwitcher) findViewById(R.id.quotetext);
-		mSwitcher.setFactory(new android.widget.ViewSwitcher.ViewFactory() {
+		mSwitcher.setFactory(new ViewSwitcher.ViewFactory() {
 				
 				public View makeView() {
 					// TODO Auto-generated method stub
@@ -59,7 +60,7 @@ public class MainActivity extends Activity
 					TextView myText = new TextView(MainActivity.this);
 					myText.setGravity(Gravity.CENTER);
 				    myText.setTextAppearance(activity, android.R.style.TextAppearance_Large);
-					myText.setTextColor(android.graphics.Color.parseColor("#AD5C56"));
+					myText.setTextColor(Color.parseColor("#AD5C56"));
 					myText.setPadding(10, 10, 10, 10);
 					return myText;
 				}
@@ -67,9 +68,9 @@ public class MainActivity extends Activity
 
 	
 		final int time = 200;
-	 	android.view.animation.Animation in = new android.view.animation.AlphaAnimation(0,1);
+	 	Animation in = new AlphaAnimation(0,1);
 		in.setDuration(time);
-	    android.view.animation.Animation out = new android.view.animation.AlphaAnimation(1,0);
+	    Animation out = new AlphaAnimation(1,0);
 		out.setDuration(time);
 		in.setStartOffset(time/2);
 		
