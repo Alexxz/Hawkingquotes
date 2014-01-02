@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Stephen Hawking quotes</string>
+	<string name="author">Alexxz</string>
+	
+	<string-array name="quoteslist">
+		<item>Нам нужно нечто новое. Мы не можем предсказать что это будет и когда, потому что в этом случае оно у нас бы уже было.</item>
+		<item>Миллионы лет человечество жило как животные. Затем случилось нечто, что дало волю нашему воображению. Мы научились говорить и мы научились слушать...</item>
+		<item>Consideration of black holes suggests, not only that God does play dice, but that he sometimes confuses us by throwing them where they can\'t be seen.</item>
+		<item>Many people would claim that the boundary conditions are not part of physics but belong to metaphysics or religion. They would claim that nature had complete freedom to start the universe off any way it wanted. That may be so, but it could also have made it evolve in a completely arbitrary and random manner. Yet all the evidence is that it evolves in a regular way according to certain laws.</item>
+		<item>If you are disabled, it is probably not your fault, but it is no good blaming the world or expecting it to take pity on you. One has to have a positive attitude and must make the best of the situation that one finds oneself in; if one is physically disabled, one cannot afford to be psychologically disabled as well.</item>
+		<item>My goal is simple. It is a complete understanding of the universe, why it is as it is and why it exists at all.</item>
+		<item>There ought to be something very special about the boundary conditions of the universe and what can be more special than that there is no boundary?</item>
+		<item>What I have done is to show that it is possible for the way the universe began to be determined by the laws of science. In that case, it would not be necessary to appeal to God to decide how the universe began. This doesn\'t prove that there is no God, only that God is not necessary.</item>
+		<item>We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.</item>
+		<item>So Einstein was wrong when he said, "God does not play dice." Consideration of black holes suggests, not only that God does play dice, but that he sometimes confuses us by throwing them where they can\'t be seen.</item>
+		<item>The human race is just a chemical scum on a moderate-sized planet, orbiting around a very average star in the outer suburb of one among a hundred billion galaxies. We are so insignificant that I can\'t believe the whole universe exists for our benefit. That would be like saying that you would disappear if I closed my eyes.</item>
+		<item>I think computer viruses should count as life ... I think it says something about human nature that the only form of life we have created so far is purely destructive. We\'ve created life in our own image.</item>
+		<item>It is not clear that intelligence has any long-term survival value.</item>
+		<item>Although September 11 was horrible, it didn\'t threaten the survival of the human race, like nuclear weapons do.</item>
+		<item>The world has changed far more in the past 100 years than in any other century in history. The reason is not political or economic but technological — technologies that flowed directly from advances in basic science.</item>
+		<item>One might think this means that imaginary numbers are just a mathematical game having nothing to do with the real world. From the viewpoint of positivist philosophy, however, one cannot determine what is real. All one can do is find which mathematical models describe the universe we live in. It turns out that a mathematical model involving imaginary time predicts not only effects we have already observed but also effects we have not been able to measure yet nevertheless believe in for other reasons. So what is real and what is imaginary? Is the distinction just in our minds?</item>
+		<item>I don\'t think the human race will survive the next thousand years, unless we spread into space. There are too many accidents that can befall life on a single planet. But I\'m an optimist. We will reach out to the stars.</item>
+		<item>We shouldn\'t be surprised that conditions in the universe are suitable for life, but this is not evidence that the universe was designed to allow for life. We could call order by the name of God, but it would be an impersonal God. There\'s not much personal about the laws of physics.</item>
+	    <item>[on the possibility of contact with an alien civilization] I think it would be a disaster. The extraterrestrials would probably be far in advance of us. The history of advanced races meeting more primitive people on this planet is not very happy, and they were the same species. I think we should keep our heads low.</item>
+		<item>The life we have on Earth must have spontaneously generated itself. It must therefore be possible for life to generate spontaneously elsewhere in the universe.</item>
+		<item>I\'m sorry to disappoint science fiction fans, but if information is preserved, there is no possibility of using black holes to travel to other universes.</item>
+		<item>[What is your IQ?] I have no idea. People who boast about their IQ are losers.</item>
+		<item>Life would be tragic if it weren\'t funny.</item>
+		<item>I am discounting reports of UFOs. Why would they appear only to cranks and weirdos?</item>
+		<item>My expectations were reduced to zero when I was 21. Everything since then has been a bonus.</item>
+		<item>Evolution has ensured that our brains just aren\'t equipped to visualise 11 dimensions directly. However, from a purely mathematical point of view it\'s just as easy to think in 11 dimensions, as it is to think in three or four.</item>
+		<item>I think that it\'s important for scientists to explain their work, particularly in cosmology. This now answers many questions once asked of religion.</item>
+		<item>It is a waste of time to be angry about my disability. One has to get on with life and I haven\'t done badly. People won\'t have time for you if you are always angry or complaining.</item>
+		<item>Equations are just the boring part of mathematics. I attempt to see things in terms of geometry.</item>
+		<item>The victim should have the right to end his life, if he wants. But I think it would be a great mistake. However bad life may seem, there is always something you can do, and succeed at. While there\'s life, there is hope.</item>
+		<item>The downside of my celebrity is that I cannot go anywhere in the world without being recognized. It is not enough for me to wear dark sunglasses and a wig. The wheelchair gives me away.</item>
+		<item>I\'m not religious in the normal sense. I believe the universe is governed by the laws of science. The laws may have been decreed by God, but God does not intervene to break the laws.</item>
+		<item>In a world that is in chaos politically, socially and environmentally, how can the human race sustain another 100 years?</item>
+		<item>There is a fundamental difference between religion, which is based on authority and science, which is based on observation and reason. Science will win, because it works.</item>
+		<item>Science predicts that many different kinds of universe will be spontaneously created out of nothing. It is a matter of chance which we are in.</item>
+		<item>[Asked what he thinks about most during the day] Women. They are a complete mystery.</item>
+		<item>Any physical theory is always provisional, in the sense that it is only a hypothesis: you can never prove it. No matter how many times the results of experiments agree with some theory, you can never be sure that the next time the result will not contradict the theory.</item>
+		<item>Galileo, perhaps more than any other single person, was responsible for the birth of modern science.</item>
+		<item>Maybe that is our mistake: maybe there are no particle positions and velocities, but only waves. It is just that we try to fit the waves to our preconceived ideas of positions and velocities.The resulting mismatch is the cause of the apparent unpredictability.</item>
+		<item>To show this diagram properly, I would really need a four dimensional screen. However, because of government cuts, we could manage to provide only a two dimensional screen.</item>
+		<item>We are all different - but we share the same human spirit. Perhaps it\'s human nature that we adapt - and survive.</item>
+		<item>It matters if you don\'t just give up.</item>
+	</string-array>
+   
+</resources>
