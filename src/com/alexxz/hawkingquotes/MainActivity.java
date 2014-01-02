@@ -55,7 +55,6 @@ public class MainActivity extends Activity
 		mSwitcher.setFactory(new ViewSwitcher.ViewFactory() {
 				
 				public View makeView() {
-					// TODO Auto-generated method stub
 					
 					TextView myText = new TextView(MainActivity.this);
 					myText.setGravity(Gravity.CENTER);
