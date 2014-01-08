@@ -8,6 +8,9 @@
 	
 	<string name="quoteslanguage_summary">Change language of quotes</string>
 	<string name="quoteslanguage_title">Language of quotes</string>
+	<string name="lngAutomatic">Automatic</string>
+	<string name="lngEnglish">English</string>
+	<string name="lngRussian">Russian</string>
 	
 	<string-array name="quoteslist">
 		<item>We need something new. We can\'t predict what that will be or when we will find it because if we knew that, we would have found it already!</item>

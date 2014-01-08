@@ -4,8 +4,8 @@
 	<ListPreference
 		android:key="quoteslanguage"
 		android:summary="@string/quoteslanguage_summary"
-		android:title="@string/quoteslanguage_title"/>
-		<!-- android:entries="@array/supportedLanguages"
+		android:title="@string/quoteslanguage_title"
+		android:entries="@array/supportedLanguages"
 		android:entryValues="@array/languageValues"
-		/>-->
+		/>
 </PreferenceScreen>

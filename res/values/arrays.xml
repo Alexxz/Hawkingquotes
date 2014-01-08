@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <resources> 
-	<!-- <string-array name="supportedLanguages"> 
-		<item>Number 1</item> 
-		<item>Number 2</item> 
-		<item>Number 3</item> 
-		<item>Number 4</item> 
+	<string-array name="supportedLanguages"> 
+		<item>@string/lngAutomatic</item> 
+		<item>@string/lngEnglish</item> 
+		<item>@string/lngRussian</item> 
 	</string-array> 
 	<string-array name="languageValues"> 
-		<item>1</item> 
-		<item>2</item> 
-		<item>3</item> 
-		<item>4</item> 
-	</string-array> -->
+		<item>auto</item> 
+		<item>en</item> 
+		<item>ru</item>
+	</string-array>
 </resources>
