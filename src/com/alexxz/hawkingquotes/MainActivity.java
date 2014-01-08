@@ -112,4 +112,10 @@ public class MainActivity extends Activity
 		    return true;
 		}
     }
+	
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuItem mi = menu.add(0, 1, 0, "Preferences");
+		mi.setIntent(new Intent(this, PrefActivity.class));
+		return super.onCreateOptionsMenu(menu);
+	}
 }

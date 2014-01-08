@@ -24,6 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+		<activity 
+			android:name=".PrefActivity"
+			android:label="PrefActivity title"> </activity>
 		<uses-library required="false" name="com.sec.android.app.multiwindow" /> 
 		<meta-data android:name="com.sec.android.support.multiwindow" android:value="true" /> 
     </application>
