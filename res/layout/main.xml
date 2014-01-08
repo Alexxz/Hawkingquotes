@@ -14,14 +14,22 @@
 	<RelativeLayout
 		android:layout_height="match_parent"
 		android:layout_width="match_parent"
-		android:id="@+id/authorlayout"
-		android:gravity="bottom|right">
+		android:id="@+id/authorlayout">
 
 		<TextView
-			android:layout_height="wrap_content"
+			android:layout_height="match_parent"
 			android:text="@string/author"
 			android:textAppearance="?android:attr/textAppearanceSmall"
-			android:layout_width="wrap_content"/>
+			android:layout_width="match_parent"
+			android:gravity="bottom|right"/>
+		
+		<TextView
+			android:layout_height="match_parent"
+			android:text="1/1"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="match_parent"
+			android:id="@+id/statustext"
+			android:gravity="bottom|left"/>
 
 	</RelativeLayout>
 

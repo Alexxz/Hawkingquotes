@@ -17,6 +17,7 @@ public class MainActivity extends Activity
 		
 	private GestureDetectorCompat mDetector; 
 	private TextSwitcher mSwitcher;
+	private TextView mStatus;
 	
 	private int counter = 0;
 	
@@ -30,8 +31,9 @@ public class MainActivity extends Activity
         setContentView(R.layout.main);
 	
 	    java.util.Random r = new java.util.Random(); 
-		this.counter=r.nextInt(MainActivity.quotes.length-1);
+		this.counter=r.nextInt(MainActivity.quotes.length - 1);
 		
+		this.mStatus = (TextView) findViewById(R.id.statustext);
 		
 		this.mDetector = new GestureDetectorCompat(this,  new MyGestureListener());
 		
@@ -92,6 +94,7 @@ public class MainActivity extends Activity
 	private void showQuote()
 	{
 		this.mSwitcher.setText(MainActivity.quotes[this.counter]);
+		this.mStatus.setText("" + (this.counter + 1) + "/" + MainActivity.quotes.length);
 	}
 	
 	@Override
