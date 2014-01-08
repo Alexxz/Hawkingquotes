@@ -6,6 +6,10 @@
 	<string name="exitbtntxt">Выход</string>
 	<string name="nextquotebtntxt">Следующая цитата</string>
 	
+	<string name="quoteslanguage_summary">Изменить язык цитат</string>
+	<string name="quoteslanguage_title">Язык цитат</string>
+	
+	
 	<string-array name="quoteslist">
 		<item>Нам нужно нечто новое. Мы не можем предсказать что это будет и когда, потому что в этом случае оно у нас бы уже было.</item>
 		<item>Миллионы лет человечество жило как животные. Затем случилось нечто, что дало волю нашему воображению. Мы научились говорить и мы научились слушать...</item>
