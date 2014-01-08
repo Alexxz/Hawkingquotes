@@ -19,7 +19,7 @@
 
 		<TextView
 			android:layout_height="wrap_content"
-			android:text="Alexxz"
+			android:text="@string/author"
 			android:textAppearance="?android:attr/textAppearanceSmall"
 			android:layout_width="wrap_content"/>
 
