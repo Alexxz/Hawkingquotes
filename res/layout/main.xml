@@ -73,15 +73,15 @@
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="Next quote"
+				android:text="@string/nextquotebtntxt"
 				android:layout_width="wrap_content"
 				android:id="@+id/nextquotebutton"/>
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="Exit"
 				android:layout_width="wrap_content"
-				android:id="@+id/exitbutton"/>
+				android:id="@+id/exitbutton"
+				android:text="@string/exitbtntxt"/>
 
 		</LinearLayout>
 

@@ -3,6 +3,8 @@
 
     <string name="app_name">Stephen Hawking quotes</string>
 	<string name="author">Alexxz</string>
+	<string name="exitbtntxt">Exit</string>
+	<string name="nextquotebtntxt">Next quote</string>
 	
 	<string-array name="quoteslist">
 		<item>We need something new. We can\'t predict what that will be or when we will find it because if we knew that, we would have found it already!</item>

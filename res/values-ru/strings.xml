@@ -3,6 +3,8 @@
 
     <string name="app_name">Цитаты Стивена Хокинга</string>
 	<string name="author">Alexxz</string>
+	<string name="exitbtntxt">Выход</string>
+	<string name="nextquotebtntxt">Следующая цитата</string>
 	
 	<string-array name="quoteslist">
 		<item>Нам нужно нечто новое. Мы не можем предсказать что это будет и когда, потому что в этом случае оно у нас бы уже было.</item>
