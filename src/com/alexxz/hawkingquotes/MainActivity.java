@@ -10,6 +10,7 @@ import android.support.v4.view.*;
 import android.graphics.*;
 import android.content.*;
 import android.content.res.*;
+import android.preference.*;
 
 public class MainActivity extends Activity
 {
@@ -83,7 +84,7 @@ public class MainActivity extends Activity
 		
     }
 	
-	private  void showNextQuote()
+	private void showNextQuote()
 	{
 		this.counter++;
 		this.counter = this.counter % MainActivity.quotes.length;
@@ -94,7 +95,12 @@ public class MainActivity extends Activity
 	private void showQuote()
 	{
 		this.mSwitcher.setText(MainActivity.quotes[this.counter]);
-		this.mStatus.setText("" + (this.counter + 1) + "/" + MainActivity.quotes.length);
+		this.mStatus.setText("" + this.getLanguage() + " " +  (this.counter + 1) + "/" + MainActivity.quotes.length);
+	}
+	
+	private String getLanguage() {
+		SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+		return pref.getString("quoteslanguage", "auto");
 	}
 	
 	@Override
