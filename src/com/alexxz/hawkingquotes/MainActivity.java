@@ -125,10 +125,17 @@ public class MainActivity extends Activity
 	}
 	
 	private void setLocale() {
-		Locale locale = new Locale(this.getLanguage());
-		Locale.setDefault(locale); 
+		Locale locale = null;
+		String lang = this.getLanguage();
+		if (lang.equals("auto")) {
+			locale = Locale.getDefault();
+		} else {
+			locale = new Locale(lang);
+		}
+
 		Configuration config = new Configuration(); 
-		config.locale = locale; getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+		config.setLocale(locale); 
+		getBaseContext(). getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
 	}
 	
 	class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
