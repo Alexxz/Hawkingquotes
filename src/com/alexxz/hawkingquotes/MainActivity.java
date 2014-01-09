@@ -18,6 +18,7 @@ public class MainActivity extends Activity
 	private GestureDetectorCompat mDetector; 
 	private TextSwitcher mSwitcher;
 	private TextView mStatus;
+	private SharedPreferences.OnSharedPreferenceChangeListener preflistener;
 	
 	private int counter = 0;
 	
@@ -27,6 +28,15 @@ public class MainActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		this.setLocale();
+		
+		this.preflistener = new SharedPreferences.OnSharedPreferenceChangeListener() { 
+			public void onSharedPreferenceChanged(SharedPreferences prefs, String key) { 
+				setLocale();
+				showQuote();
+			} 
+		};
+		
+		PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this.preflistener);
 		
         setContentView(R.layout.main);
 	
