@@ -14,8 +14,6 @@ import android.preference.*;
 
 public class MainActivity extends Activity
 {
-	static private String[] quotes = {};
-		
 	private GestureDetectorCompat mDetector; 
 	private TextSwitcher mSwitcher;
 	private TextView mStatus;
@@ -26,13 +24,11 @@ public class MainActivity extends Activity
     @Override
     public void onCreate(Bundle savedInstanceState)
 	{
-		
-		this.quotes = getResources().getStringArray(R.array.quoteslist);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 	
 	    java.util.Random r = new java.util.Random(); 
-		this.counter=r.nextInt(MainActivity.quotes.length - 1);
+		this.counter=r.nextInt(this.getQuotes().length - 1);
 		
 		this.mStatus = (TextView) findViewById(R.id.statustext);
 		
@@ -84,18 +80,21 @@ public class MainActivity extends Activity
 		
     }
 	
+	
 	private void showNextQuote()
 	{
 		this.counter++;
-		this.counter = this.counter % MainActivity.quotes.length;
+		this.counter = this.counter % this.getQuotes().length;
 		showQuote();
-		
 	}
 	
 	private void showQuote()
 	{
-		this.mSwitcher.setText(MainActivity.quotes[this.counter]);
-		this.mStatus.setText("" + this.getLanguage() + " " +  (this.counter + 1) + "/" + MainActivity.quotes.length);
+		// no matter what, counter shall be within array index
+		this.counter = this.counter % this.getQuotes().length;
+		
+		this.mSwitcher.setText(this.getQuotes()[this.counter]);
+		this.mStatus.setText("" + this.getLanguage() + " " +  (this.counter + 1) + "/" + getQuotes().length);
 	}
 	
 	private String getLanguage() {
@@ -107,6 +106,10 @@ public class MainActivity extends Activity
 	public boolean onTouchEvent(MotionEvent event){ 
 	    this.mDetector.onTouchEvent(event);
 		return super.onTouchEvent(event);
+	}
+	
+	private String[] getQuotes() {
+		return getResources().getStringArray(R.array.quoteslist);
 	}
 	
 	class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
