@@ -6,8 +6,10 @@
 	<string name="exitbtntxt">Exit</string>
 	<string name="nextquotebtntxt">Next quote</string>
 	
-	<string name="quoteslanguage_summary">Change language of quotes</string>
-	<string name="quoteslanguage_title">Language of quotes</string>
+	<string name="preferencesoptn">Preferences</string>
+	
+	<string name="quoteslanguage_summary">Change language of application</string>
+	<string name="quoteslanguage_title">Language of application</string>
 	<string name="lngAutomatic">Automatic</string>
 	<string name="lngEnglish">English</string>
 	<string name="lngRussian">Russian</string>

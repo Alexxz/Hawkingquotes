@@ -6,8 +6,10 @@
 	<string name="exitbtntxt">Выход</string>
 	<string name="nextquotebtntxt">Следующая цитата</string>
 	
-	<string name="quoteslanguage_summary">Изменить язык цитат</string>
-	<string name="quoteslanguage_title">Язык цитат</string>
+	<string name="preferencesoptn">Настройки</string>
+	
+	<string name="quoteslanguage_summary">Изменить язык приложения</string>
+	<string name="quoteslanguage_title">Язык приложения</string>
 	<string name="lngAutomatic">Автоматический</string>
 	<string name="lngEnglish">Английский</string>
 	<string name="lngRussian">Русский</string>

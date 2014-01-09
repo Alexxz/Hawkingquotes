@@ -11,6 +11,7 @@ import android.graphics.*;
 import android.content.*;
 import android.content.res.*;
 import android.preference.*;
+import java.util.*;
 
 public class MainActivity extends Activity
 {
@@ -24,7 +25,9 @@ public class MainActivity extends Activity
     @Override
     public void onCreate(Bundle savedInstanceState)
 	{
-        super.onCreate(savedInstanceState);
+		super.onCreate(savedInstanceState);
+		this.setLocale();
+		
         setContentView(R.layout.main);
 	
 	    java.util.Random r = new java.util.Random(); 
@@ -64,7 +67,6 @@ public class MainActivity extends Activity
 				}
 			});
 
-	
 		final int time = 200;
 	 	Animation in = new AlphaAnimation(0,1);
 		in.setDuration(time);
@@ -76,7 +78,7 @@ public class MainActivity extends Activity
 		mSwitcher.setInAnimation(in);	
 	    mSwitcher.setOutAnimation(out);
 		
-		showQuote();
+		this.showQuote();
 		
     }
 	
@@ -112,6 +114,13 @@ public class MainActivity extends Activity
 		return getResources().getStringArray(R.array.quoteslist);
 	}
 	
+	private void setLocale() {
+		Locale locale = new Locale(this.getLanguage());
+		Locale.setDefault(locale); 
+		Configuration config = new Configuration(); 
+		config.locale = locale; getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+	}
+	
 	class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
 
 		@Override
@@ -123,7 +132,7 @@ public class MainActivity extends Activity
     }
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
-		MenuItem mi = menu.add(0, 1, 0, "Preferences");
+		MenuItem mi = menu.add(0, 1, 0, getString(R.string.preferencesoptn));
 		mi.setIntent(new Intent(this, PrefActivity.class));
 		return super.onCreateOptionsMenu(menu);
 	}
