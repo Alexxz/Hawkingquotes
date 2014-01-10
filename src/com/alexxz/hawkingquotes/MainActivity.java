@@ -134,8 +134,8 @@ public class MainActivity extends Activity
 		}
 
 		Configuration config = new Configuration(); 
-		config.setLocale(locale); 
-		getBaseContext(). getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+		config.locale = locale; 
+		getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
 	}
 	
 	class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
